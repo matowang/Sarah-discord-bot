@@ -6,7 +6,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-    if (message.content.bot) return;
+    if (message.author.bot) return;
     console.log("i hear u");
     if (Math.random() < .5) {
         message.channel.send("uwu");
