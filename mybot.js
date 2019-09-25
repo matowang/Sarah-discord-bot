@@ -17,5 +17,4 @@ client.on("message", (message) => {
         console.log("owo")
     }
 });
-
 client.login(process.env.DISCORD_BOT_TOKEN);
