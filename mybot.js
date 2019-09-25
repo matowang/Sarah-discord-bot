@@ -6,10 +6,16 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-    if (Math.random() < .5)
+    if (message.content.bot) return;
+    console.log("i hear u");
+    if (Math.random() < .5) {
         message.channel.send("uwu");
-    else
+        console.log("uwu")
+    }
+    else {
         message.channel.send("owo");
+        console.log("owo")
+    }
 });
 
 client.login(process.env.DISCORD_BOT_TOKEN);
