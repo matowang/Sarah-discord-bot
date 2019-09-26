@@ -1,5 +1,4 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const client = require("./lib/discord-client.js");
 
 client.on("ready", () => {
     console.log("I am ready!");
@@ -17,4 +16,3 @@ client.on("message", (message) => {
         console.log("owo")
     }
 });
-client.login(process.env.DISCORD_BOT_TOKEN);
