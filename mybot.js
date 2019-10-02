@@ -12,7 +12,7 @@ client.on("message", (msg) => {
     console.log("i hear u");
 
     if (msg.content.startsWith(config.prefix)) {
-        const command = msg.content.subStr(config.prefix.length);
+        const command = msg.content.substr(config.prefix.length);
         switch (command.toLowerCase()) {
             case "toggle egirlmode":
                 eGirlModeOn = !eGirlModeOn;
